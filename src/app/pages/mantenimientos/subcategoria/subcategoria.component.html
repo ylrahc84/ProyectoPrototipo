@@ -1,0 +1,76 @@
+<div class="row animated fadeIn fast">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Buscar Sub Categorias" 
+                #TxtTermino
+                (keyup)="buscar(TxtTermino.value)"
+                />
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-8">
+                        <h4 class="card-title">Sub Categorias</h4>
+                        <h6 class="card-subtitle">Registro de Sub Categorias</h6>                
+                    </div>
+                    <div class="col">
+                        <div class="text-right">
+                            <a class="btn btn-primary"
+                            routerLink="/dashboard/subcategoriaitem/nuevo"
+                            >
+                            <i class="fa fa-pencil"></i>
+                            Crear SubCategoria
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>SubCategoriaID</th>
+                                <th>CategoriaID</th>
+                                <th>Descripcion</th>
+                                <th>Usuario</th>
+                                <th class="text-nowrap w100 text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let subCategoria of subCategorias">
+                                <td>{{subCategoria.subCategoriaID}}</td>
+                                <td>{{subCategoria.categoriaID}}</td>
+                                <td>{{subCategoria.nombreSubCategoria}}</td>
+                                <td>{{subCategoria.usuario}}</td>
+                                <td class="text-nowrap text-center">
+                                    <a 
+                                    [routerLink]="['/dashboard/subcategoriaitem', subCategoria.subCategoriaID]" routerLinkActive="router-link-active" 
+                                    data-toggle="tooltip" 
+                                    data-original-title="Editar"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                    <a class="cursor"
+                                    (click)="borrarSubCategoria(subCategoria)"
+                                    data-toggle="tooltip" 
+                                    data-original-title="Borrar"> <i class="fa fa-close text-danger"></i> </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="btn btn-secondary">Anteriores</button>
+                &nbsp;
+                <button class="btn btn-secondary">Siguiente</button>
+            </div>
+        </div>
+    </div>
+</div>

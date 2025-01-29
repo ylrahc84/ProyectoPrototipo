@@ -1,0 +1,126 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header bg-info">
+          <h4 class="m-b-0 text-white">Ingreso de Prepagos para Reservas</h4>
+        </div>
+        <div class="card-body">
+          <!-- Información de Reserva -->
+          <div class="row mb-3">
+            <div class="col-lg-12">
+              <div class="alert alert-secondary" role="alert">
+                <strong>INFORMACIÓN DE RESERVA:</strong>
+                <span>ID Reserva: <b>NA220011382</b></span>
+                <span class="ml-4">Grupo: <b>089-25007</b></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabla Principal -->
+          <div class="table-responsive mb-4">
+            <table class="table table-bordered">
+              <thead class="bg-primary text-white">
+                <tr>
+                  <th>ID Prepago</th>
+                  <th>Concepto</th>
+                  <th>F. Depo</th>
+                  <th>Total RSV</th>
+                  <th>Tot. Prepa</th>
+                  <th>Saldo</th>
+                  <th>Mon</th>
+                  <th>Pro</th>
+                  <th>Operador</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>Pago Adelantado</td>
+                  <td>2025-01-20</td>
+                  <td>2000.00</td>
+                  <td>1500.00</td>
+                  <td>500.00</td>
+                  <td>USD</td>
+                  <td>Proveedor</td>
+                  <td>Admin</td>
+                </tr>
+                <!-- Agregar más filas si es necesario -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Formulario de Detalles -->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label>ID Operación:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Banco:</label>
+                <select class="form-control">
+                  <option>Adel - Pago Adel a Proveedores</option>
+                  <option>Banco Nacional</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Cuenta Bancaria:</label>
+                <select class="form-control">
+                  <option>Adel - Adelanto Proveedores $</option>
+                  <option>Cuenta Corriente</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Fecha Operación:</label>
+                <input type="date" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Descripción:</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label>Moneda:</label>
+                <div class="d-flex">
+                  <input type="text" class="form-control mr-2" placeholder="USD" disabled>
+                  <input type="number" class="form-control" placeholder="T. Cambio">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Forma Pago:</label>
+                <select class="form-control">
+                  <option>Contado Efectivo</option>
+                  <option>Transferencia</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>N° Operación:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Total Prepago:</label>
+                <input type="text" class="form-control" value="6717.12 USD" disabled>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="row mt-4">
+            <div class="col-md-12 d-flex justify-content-between">
+              <div>
+                <button type="button" class="btn btn-primary">Nuevo</button>
+                <button type="button" class="btn btn-success">Aceptar</button>
+                <button type="button" class="btn btn-secondary">Modificar</button>
+                <button type="button" class="btn btn-danger">Eliminar</button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-warning">Aplicar Prepago</button>
+                <button type="button" class="btn btn-info">Imprimir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,80 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header bg-info">
+          <h4 class="m-b-0 text-white">Catálogo General de Cuentas Contables</h4>
+        </div>
+        <div class="card-body">
+          <!-- Encabezado con Filtros -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label>Ver:</label>
+              <select class="form-control">
+                <option>Toda la Lista</option>
+                <option>Activos</option>
+                <option>Pasivos</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label>Todas la Lista:</label>
+              <input type="text" class="form-control" placeholder="Buscar cuenta...">
+            </div>
+          </div>
+
+          <!-- Tabla Principal -->
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="bg-primary text-white">
+                <tr>
+                  <th>Cuenta Contable</th>
+                  <th>Descripción de Cuenta Contable</th>
+                  <th>Título</th>
+                  <th>Operador</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Ejemplo de datos -->
+                <tr>
+                  <td>1</td>
+                  <td>ACTIVOS</td>
+                  <td>1</td>
+                  <td>CHARLY</td>
+                </tr>
+                <tr>
+                  <td>101</td>
+                  <td>CAJA Y BANCOS</td>
+                  <td>1</td>
+                  <td>CARGA</td>
+                </tr>
+                <tr>
+                  <td>101-01</td>
+                  <td>EFECTIVO EN CAJA</td>
+                  <td>1</td>
+                  <td>CARGA</td>
+                </tr>
+                <!-- Más filas según sea necesario -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="row mt-4">
+            <div class="col-md-12 text-center">
+              <button type="button" class="btn btn-primary">Nuevo</button>
+              <button type="button" class="btn btn-warning">Modificar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-secondary">Ver Movimientos</button>
+              <button type="button" class="btn btn-success">Exportar a Excel</button>
+            </div>
+          </div>
+
+          <!-- Botón de Cerrar -->
+          <div class="row mt-4">
+            <div class="col-md-12 text-right">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

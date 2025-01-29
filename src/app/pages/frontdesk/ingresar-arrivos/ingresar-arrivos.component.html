@@ -1,0 +1,106 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header bg-info">
+          <h4 class="m-b-0 text-white">Lista Arrivos del Día</h4>
+        </div>
+        <div class="card-body">
+          <!-- Encabezado con filtros -->
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <label>Ver:</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <label>A:</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-3 align-self-end">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Ver Todos los Ingresos</label>
+              </div>
+            </div>
+            <div class="col-md-3 align-self-end text-right">
+              <button class="btn btn-secondary">Buscar</button>
+            </div>
+          </div>
+
+          <!-- Tabla Principal -->
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="bg-primary text-white">
+                <tr>
+                  <th>ROOM</th>
+                  <th>CAT. HAB.</th>
+                  <th>N° RESERVA</th>
+                  <th>TARIFA</th>
+                  <th>PLAN</th>
+                  <th>AGENCIA</th>
+                  <th>DESCRIPCIÓN DE RESERVA</th>
+                  <th>CHECK-IN</th>
+                  <th>CHECK-OUT</th>
+                  <th>NCH</th>
+                  <th>N° PAX</th>
+                  <th>N° CHL</th>
+                  <th>CPL</th>
+                  <th>ING</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Ejemplo de datos -->
+                <tr>
+                  <td>101</td>
+                  <td>DELUX</td>
+                  <td>NA220011382</td>
+                  <td>FITS</td>
+                  <td>MED</td>
+                  <td>COLLETTE VACATIONS</td>
+                  <td>GRUPO: 089-25007</td>
+                  <td>25/01/2025</td>
+                  <td>27/01/2025</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <!-- Más filas si es necesario -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Observaciones y Totales -->
+          <div class="row mt-3">
+            <div class="col-md-8">
+              <label>Observaciones de Reserva:</label>
+              <textarea class="form-control" rows="2"></textarea>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <p><strong>Total Ingresos del Día:</strong> 48</p>
+                  <p><strong>Total Pax Adulto:</strong> 87</p>
+                  <p><strong>Total Childs:</strong> 0</p>
+                  <p><strong>Sin Planes:</strong> 0</p>
+                  <p><strong>Desayuno Incluido:</strong> 0</p>
+                  <p><strong>Media Pensión:</strong> 0</p>
+                  <p><strong>Alimentación Full:</strong> 0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="row mt-4">
+            <div class="col-md-12 text-center">
+              <button type="button" class="btn btn-primary">Check In</button>
+              <button type="button" class="btn btn-secondary">Rooming List</button>
+              <button type="button" class="btn btn-info">Hoja de Registro</button>
+              <button type="button" class="btn btn-warning">Imprimir los Arrivos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

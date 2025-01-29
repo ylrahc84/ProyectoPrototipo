@@ -1,0 +1,97 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header bg-info">
+          <h4 class="m-b-0 text-white">Lista de Tarifas</h4>
+        </div>
+        <div class="card-body">
+          <form onsubmit="event.preventDefault();" class="form-horizontal">
+            <div class="form-body">
+ 
+              <hr class="m-t-0 m-b-40">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-2">Búsqueda</label>
+                    <div class="col-md-10">
+                      <input type="text" id="search" placeholder="Buscar tarifas..." class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tabla de Tarifas -->
+              <h3 class="box-title mt-4">Detalle de Tarifas</h3>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Código</th>
+                      <th>Descripción de Tarifa</th>
+                      <th>Moneda</th>
+                      <th>Fecha Inicio</th>
+                      <th>Fecha Final</th>
+                      <th>Activo</th>
+                      <th>Operador</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tarifaTable">
+                    <!-- Ejemplo de datos, puedes reemplazar con datos dinámicos en Angular -->
+                    <tr>
+                      <td>001</td>
+                      <td>Tarifa Estándar</td>
+                      <td>USD</td>
+                      <td>2025-01-01</td>
+                      <td>2025-12-31</td>
+                      <td>Sí</td>
+                      <td>Charly</td>
+                      <td>
+                        <button type="button" class="btn btn-warning btn-sm">Editar</button>
+                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>002</td>
+                      <td>Tarifa Promocional</td>
+                      <td>CRC</td>
+                      <td>2025-02-01</td>
+                      <td>2025-02-28</td>
+                      <td>No</td>
+                      <td>Charly</td>
+                      <td>
+                        <button type="button" class="btn btn-warning btn-sm">Editar</button>
+                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>003</td>
+                      <td>Tarifa Corporativa</td>
+                      <td>USD</td>
+                      <td>2025-01-15</td>
+                      <td>2025-12-15</td>
+                      <td>Sí</td>
+                      <td>Charly</td>
+                      <td>
+                        <button type="button" class="btn btn-warning btn-sm">Editar</button>
+                        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Botón de Crear Nueva Tarifa -->
+              <div class="form-actions mt-4">
+                <div class="row">
+                  <div class="col-md-12 text-left">
+                    <button type="button" class="btn btn-primary">Crear Nueva Tarifa</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

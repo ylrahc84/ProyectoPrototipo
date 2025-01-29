@@ -1,0 +1,133 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header bg-info">
+          <h4 class="m-b-0 text-white">Pronóstico de Ocupación</h4>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <!-- Panel de Configuración -->
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-header bg-secondary">
+                  <h5 class="text-white">Configuración</h5>
+                </div>
+                <div class="card-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label>Fecha Inicial:</label>
+                      <input type="date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label>Fecha Final:</label>
+                      <input type="date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label>Categoría de Habitación:</label>
+                      <div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input">
+                          <label class="form-check-label">Categoría Standard</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input">
+                          <label class="form-check-label">Categoría Deluxe</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input">
+                          <label class="form-check-label">Categoría Suite</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input">
+                          <label class="form-check-label">Categoría Junior Suite</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Ver:</label>
+                      <div>
+                        <div class="form-check">
+                          <input type="radio" name="vista" class="form-check-input">
+                          <label class="form-check-label">Ocupación</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="radio" name="vista" class="form-check-input">
+                          <label class="form-check-label">Disponibilidad</label>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-success btn-block">Procesar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tabla Principal -->
+            <div class="col-lg-9">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="bg-primary text-white">
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Tot. Habi</th>
+                      <th>BLK</th>
+                      <th>Tot. Ocupa</th>
+                      <th>N° Pax</th>
+                      <th>Tot. CHL</th>
+                      <th>Stand</th>
+                      <th>Delux</th>
+                      <th>Junior</th>
+                      <th>Suite</th>
+                      <th>Por. Ocupación</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ene 25 2025</td>
+                      <td>63</td>
+                      <td>0</td>
+                      <td>64</td>
+                      <td>119</td>
+                      <td>0</td>
+                      <td>12</td>
+                      <td>37</td>
+                      <td>18</td>
+                      <td>9</td>
+                      <td>101.5%</td>
+                    </tr>
+                    <tr>
+                      <td>Ene 26 2025</td>
+                      <td>63</td>
+                      <td>0</td>
+                      <td>51</td>
+                      <td>95</td>
+                      <td>0</td>
+                      <td>12</td>
+                      <td>31</td>
+                      <td>17</td>
+                      <td>3</td>
+                      <td>80.95%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pie de Página -->
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <button type="button" class="btn btn-primary btn-block">Imprimir</button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn btn-success btn-block">Exportar a Excel</button>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5>Total Hab. Ocupadas: 297</h5>
+              <h5>Total Pax: 548</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

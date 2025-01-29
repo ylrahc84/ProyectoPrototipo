@@ -1,0 +1,111 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header bg-info">
+          <h4 class="m-b-0 text-white">Operaciones en Caja y Bancos</h4>
+        </div>
+        <div class="card-body">
+          <!-- Encabezado con Filtros -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label>Cuenta Bancaria:</label>
+              <select class="form-control">
+                <option>BNCR COLONES - 179-000290-2</option>
+                <option>BNCR DÓLARES - 179-000291-2</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label>Ver:</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <label>A:</label>
+              <input type="date" class="form-control">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-12">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar operación...">
+                <button class="btn btn-secondary">Buscar</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabla Principal -->
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="bg-primary text-white">
+                <tr>
+                  <th>Fecha</th>
+                  <th>TIP</th>
+                  <th>N° Operación</th>
+                  <th>Concepto</th>
+                  <th>De / Para</th>
+                  <th>Retiro</th>
+                  <th>Depósito</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Ejemplo de datos -->
+                <tr>
+                  <td>02/01/2025</td>
+                  <td>CXP</td>
+                  <td>21822589</td>
+                  <td>PAGO HA PROVEEDOR</td>
+                  <td>ASOC. ADM. TRES ESQUINAS CRUCE CARMEN</td>
+                  <td class="bg-warning">₡515,489.21</td>
+                  <td class="bg-info">₡0.00</td>
+                </tr>
+                <tr>
+                  <td>02/01/2025</td>
+                  <td>CXP</td>
+                  <td>21823053</td>
+                  <td>PAGO HA PROVEEDOR</td>
+                  <td>INSTITUTO COSTARRICENSE DE ELECTRICIDAD</td>
+                  <td class="bg-warning">₡5,029,520.00</td>
+                  <td class="bg-info">₡0.00</td>
+                </tr>
+                <!-- Más filas según sea necesario -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Totales -->
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <span><strong>Saldo Anterior:</strong> 11,433,043.38</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Total Depósito:</strong> 19,272,712.55</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Total Retiro:</strong> 19,056,493.91</span>
+            </div>
+            <div class="col-md-3 text-right">
+              <span><strong>Total Saldo:</strong> 11,649,262.02</span>
+            </div>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="row mt-4">
+            <div class="col-md-12 text-center">
+              <button type="button" class="btn btn-primary">Depósitos</button>
+              <button type="button" class="btn btn-secondary">Retiros</button>
+              <button type="button" class="btn btn-info">Transferencias</button>
+              <button type="button" class="btn btn-success">Exportar Excel</button>
+              <button type="button" class="btn btn-light">Imp. Listado</button>
+            </div>
+          </div>
+
+          <!-- Botón de Cerrar -->
+          <div class="row mt-4">
+            <div class="col-md-12 text-right">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

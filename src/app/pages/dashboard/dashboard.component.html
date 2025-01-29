@@ -1,0 +1,152 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header bg-info">
+        <h4 class="m-b-0 text-white">Dashboard - Estadísticas Diarias</h4>
+      </div>
+      <div class="card-body">
+        <!-- Indicadores Principales -->
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="card bg-success text-white">
+              <div class="card-body">
+                <h5 class="card-title">Ingresos del Día</h5>
+                <h3>45</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-warning text-white">
+              <div class="card-body">
+                <h5 class="card-title">Salidas del Día</h5>
+                <h3>30</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h5 class="card-title">Monto Total Facturas</h5>
+                <h3>$15,480</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-info text-white">
+              <div class="card-body">
+                <h5 class="card-title">Ocupación Actual</h5>
+                <h3>75%</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gráficas -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header bg-secondary text-white">Ingresos por Tipo de Habitación</div>
+              <div class="card-body">
+                <canvas id="habitacionChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header bg-secondary text-white">Ingresos vs Gastos</div>
+              <div class="card-body">
+                <canvas id="ingresosGastosChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabla Resumen -->
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header bg-dark text-white">Resumen de Actividades</div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="bg-primary text-white">
+                      <tr>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Monto Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Reservas Confirmadas</td>
+                        <td>20</td>
+                        <td>$5,000</td>
+                      </tr>
+                      <tr>
+                        <td>Reservas Canceladas</td>
+                        <td>5</td>
+                        <td>$1,000</td>
+                      </tr>
+                      <tr>
+                        <td>Servicios Adicionales</td>
+                        <td>15</td>
+                        <td>$3,500</td>
+                      </tr>
+                      <tr>
+                        <td>Promedio de Ocupación</td>
+                        <td colspan="2">75%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts para Gráficas -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const habitacionCtx = document.getElementById('habitacionChart').getContext('2d');
+  new Chart(habitacionCtx, {
+    type: 'pie',
+    data: {
+      labels: ['Standard', 'Deluxe', 'Suite'],
+      datasets: [{
+        data: [8000, 5000, 2000],
+        backgroundColor: ['#4caf50', '#2196f3', '#ff5722']
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }
+  });
+
+  const ingresosGastosCtx = document.getElementById('ingresosGastosChart').getContext('2d');
+  new Chart(ingresosGastosCtx, {
+    type: 'bar',
+    data: {
+      labels: ['Ingresos', 'Gastos'],
+      datasets: [{
+        label: 'Monto en USD',
+        data: [15000, 7000],
+        backgroundColor: ['#3f51b5', '#f44336']
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+</script>
